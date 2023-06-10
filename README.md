@@ -2,26 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
 
-## Development server
+Aplicación para apoderados que informa la situación académica de sus pupilos.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Funcionalidades:
 
-## Code scaffolding
+1- Notificar sobre fechas de evaluaciones fijadas, incluyendo fechas de controles, pruebas, trabajos, presentaciones, ensayos, entre otras.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2- Comunicar las calificaciones de las evaluaciones que haya tenido el estudiante en una determinada asignatura.
 
-## Build
+3- Dar a conocer fechas de reuniones de apoderados, así como también citaciones al apoderado que algún determinado profesor solicite.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+4- Hacer enterar sobre posibles anotaciones que el alumno haya recibido, además del contenido y razón de la anotación en sí.
 
-## Running unit tests
+5- Indicar sobre materiales y objetos que se necesitan para alguna asignatura, como un determinado libro o útiles para hacer un trabajo.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+6- Anunciar otras fechas importantes que son de interés para el apoderado, como suspensiones de clases, días que celebra la institución y fechas donde ocurrirán premiaciones.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+7- Avisar sobre información miscelánea que puede ser de interés para el apoderado y el estudiante, como actividades extracurriculares, planes de aprendizaje de otros idiomas, datos sobre las pruebas SIMCE y PAES, entre otras.

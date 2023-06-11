@@ -8,7 +8,13 @@ import { LoginComponent } from './login/login.component';
 import { RegistrarseComponent } from './registrarse/registrarse.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 
-import {FormsModule, ReactiveFormsModule} from '@angular/forms' 
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { ReunionesComponent } from './reuniones/reuniones.component';
+import { ClasesComponent } from './clases/clases.component';
+import { EvaluacionesComponent } from './evaluaciones/evaluaciones.component';
+import { MaterialesComponent } from './materiales/materiales.component';
+import { NotasComponent } from './notas/notas.component';
+import { NoticiasComponent } from './noticias/noticias.component' 
 
 
 
@@ -32,6 +38,36 @@ const routes: Routes = [
 
   },
   {
+    path:'evaluaciones',
+    component: EvaluacionesComponent
+
+  },
+  {
+    path:'materiales',
+    component: MaterialesComponent
+  },
+  {
+    path:'clases',
+    component: ClasesComponent
+  },
+  {
+    path:'anotaciones',
+    component: AnotacionesComponent
+  },
+  {
+    path: 'reuniones',
+    component: ReunionesComponent
+  },
+  {
+    path: 'notas',
+    component: NotasComponent
+
+  },
+  {
+  path:'noticias',
+  component: NoticiasComponent
+  },
+  {
     path: '**',
     component: NotfoundComponent
   },
@@ -43,7 +79,13 @@ const routes: Routes = [
     IndexComponent,
     LoginComponent,
     RegistrarseComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    ReunionesComponent,
+    ClasesComponent,
+    EvaluacionesComponent,
+    MaterialesComponent,
+    NotasComponent,
+    NoticiasComponent
   ],
   imports: [
     BrowserModule,

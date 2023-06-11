@@ -17,6 +17,8 @@ export class LoginComponent {
     'email': new FormControl('',[Validators.required,Validators.email]),
     'contra' : new FormControl('',[Validators.required])
   });
+
+  
   
   
   

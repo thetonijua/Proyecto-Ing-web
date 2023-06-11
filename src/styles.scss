@@ -6,7 +6,14 @@
     width: 50%;
     height: 300px;
   }
-
+.active{
+    color: cadetblue;
+}
+h1{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center; 
+    color: whitesmoke !important;
+}
 .carousel-control-prev{
     margin: 0;
     position: absolute;

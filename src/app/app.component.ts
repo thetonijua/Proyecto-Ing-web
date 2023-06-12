@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
+import { MessagesService } from './messages.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ep3';
+
+  constructor(public messagesService: MessagesService){
+
+  }
+
+  title = 'ep3';  
+  
+  
 }

@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output,Input } from '@angular/core';
 import { FormControl, Validators, FormGroup } from '@angular/forms';
-
+import { MessagesService } from '../messages.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -8,9 +8,21 @@ import { FormControl, Validators, FormGroup } from '@angular/forms';
 })
 export class LoginComponent {
 
+  constructor(public messagesService: MessagesService){
+
+  }
+
+  aviso:string="true";
+  
+  addMessage(){
+    this.messagesService.add(this.aviso)
+  }
+
   get email(){
     return this.formUser.get('email') as FormControl;
   }
+
+  
 
   formUser = new FormGroup({
 
@@ -18,8 +30,7 @@ export class LoginComponent {
     'contra' : new FormControl('',[Validators.required])
   });
 
-  
-  
+
   
   
 

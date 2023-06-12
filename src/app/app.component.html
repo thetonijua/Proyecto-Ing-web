@@ -15,28 +15,29 @@
         <a class="nav-link active" routerLink="/login" routerLinkActive="active">Login</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" routerLink="/notas" [hidden]="" routerLinkActive="active">Notas</a>
+        <a class="nav-link active" routerLink="/notas" [hidden]="!messagesService.messages[0]" routerLinkActive="active">Notas</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" routerLink="/noticias" routerLinkActive="active">Noticias</a>
+        <a class="nav-link active" routerLink="/noticias" [hidden]="!messagesService.messages[0]" routerLinkActive="active">Noticias</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" routerLink="/reuniones" routerLinkActive="active">Reuniones</a>
+        <a class="nav-link active" routerLink="/reuniones" [hidden]="!messagesService.messages[0]" routerLinkActive="active">Reuniones</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" routerLink="/materiales" routerLinkActive="active">Materiales</a>
+        <a class="nav-link active" routerLink="/materiales" [hidden]="!messagesService.messages[0]" routerLinkActive="active">Materiales</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" routerLink="/clases" routerLinkActive="active">Clases</a>
+        <a class="nav-link active" routerLink="/clases" [hidden]="!messagesService.messages[0]" routerLinkActive="active">Clases</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" routerLink="/anotaciones" routerLinkActive="active">Anotaciones</a>
+        <a class="nav-link active" routerLink="/anotaciones" [hidden]="!messagesService.messages[0]" routerLinkActive="active">Anotaciones</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" routerLink="/evaluaciones" routerLinkActive="active">Evaluaciones</a>
+        <a class="nav-link active" routerLink="/evaluaciones" [hidden]="!messagesService.messages[0]"  routerLinkActive="active">Evaluaciones </a>
       </li>
     </ul>
   </nav>
+  
   <section>
     <!--Titulos-->
 
@@ -45,7 +46,9 @@
 </header>
 <h2>Organiza tu situación académica online</h2>
 <div class="container">
-<router-outlet></router-outlet>
+ 
+<router-outlet  ></router-outlet>
+   
 </div>
 <br><br><br>
 <footer style=" position: relative; bottom: 0; align-items: center; width: 100%;">

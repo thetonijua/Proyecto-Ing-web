@@ -28,13 +28,14 @@
 
                 </div>
 
-                <button class="btn btn-primary" type="submit" [disabled]="formUser.invalid">
+                <button class="btn btn-primary" type="submit" [disabled]="formUser.invalid" (click)="addMessage()">
                     Entrar
                 </button>
+                
 
             </form>
         </div>
-        <a class="nav-link active" routerLink="/registrarse" routerLinkActive="active">No me he registrado aún</a>
+        <a class="nav-link active" routerLink="/registrarse"  routerLinkActive="active">No me he registrado aún</a>
     </div>
 
     <!--{{formUser.get('email')?.value|json}}
